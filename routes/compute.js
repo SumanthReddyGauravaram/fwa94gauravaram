@@ -19,10 +19,10 @@ router.get('/',function(req,res,next){
     }
         
     
-    res.write("Computes the values for Math.hypot and Math.ceil function." + "\n");
-    res.write('Math.log2 applied to ' + storeValue1 + " is " + Math.cos(storeValue1) + "\n");
-    res.write('Math.log2 applied to ' + storeValue2 + " is " + Math.asin(storeValue2) + "\n");
-    res.end('Math.cosh applied to ' + storeValue3 + " is " + Math.asinh(storeValue3));
+    res.write("Computes the values for Math.cos,Math.asin and Math.asinh function." + "\n");
+    res.write('Math.cos applied to ' + storeValue1 + " is " + Math.cos(storeValue1) + "\n");
+    res.write('Math.asin applied to ' + storeValue2 + " is " + Math.asin(storeValue2) + "\n");
+    res.end('Math.asinh applied to ' + storeValue3 + " is " + Math.asinh(storeValue3));
 });
 
 module.exports = router;
